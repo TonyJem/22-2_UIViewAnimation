@@ -1,24 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="animatedCars" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23U-xc-LbQ">
+                                <rect key="frame" x="25" y="64" width="80" height="128"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="58o-bT-0vD"/>
+                                    <constraint firstAttribute="width" constant="80" id="b2J-q6-CjE"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kta-32-1yV">
+                                <rect key="frame" x="309" y="64" width="80" height="128"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMU-8c-KR3">
+                                <rect key="frame" x="172" y="807" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Run Race!"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zr3-qU-pag">
+                                <rect key="frame" x="167" y="64" width="80" height="128"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="23U-xc-LbQ" firstAttribute="height" secondItem="zr3-qU-pag" secondAttribute="height" id="4ft-9e-nqE"/>
+                            <constraint firstItem="zr3-qU-pag" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="EPG-PO-9Eg"/>
+                            <constraint firstItem="23U-xc-LbQ" firstAttribute="height" secondItem="kta-32-1yV" secondAttribute="height" id="FCJ-6E-Zem"/>
+                            <constraint firstItem="kta-32-1yV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Zyx-Ar-9P8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kta-32-1yV" secondAttribute="trailing" constant="25" id="ffa-vG-qkS"/>
+                            <constraint firstItem="23U-xc-LbQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="gXB-Gs-gID"/>
+                            <constraint firstItem="23U-xc-LbQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="lRB-6D-uTz"/>
+                            <constraint firstItem="zr3-qU-pag" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ncj-xo-4cg"/>
+                            <constraint firstItem="23U-xc-LbQ" firstAttribute="width" secondItem="zr3-qU-pag" secondAttribute="width" id="vJx-6L-wUB"/>
+                            <constraint firstItem="23U-xc-LbQ" firstAttribute="width" secondItem="kta-32-1yV" secondAttribute="width" id="zwq-2N-sP2"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenCar" destination="zr3-qU-pag" id="iHB-w4-GYa"/>
+                        <outlet property="greenCarConstraint" destination="EPG-PO-9Eg" id="Ghg-bI-yj6"/>
+                        <outlet property="orangeCar" destination="23U-xc-LbQ" id="6dK-Ie-gFu"/>
+                        <outlet property="orangeCarConstraint" destination="lRB-6D-uTz" id="4OM-bw-O9K"/>
+                        <outlet property="purpleCar" destination="kta-32-1yV" id="sP0-xL-9Zr"/>
+                        <outlet property="purpleCarConstraint" destination="Zyx-Ar-9P8" id="dgs-HY-WSP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="280" y="149"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
