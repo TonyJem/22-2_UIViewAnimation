@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  animatedCars
-//
-//  Created by Office-iMac on 2021-01-18.
-//
-
 import UIKit
 
 @main
