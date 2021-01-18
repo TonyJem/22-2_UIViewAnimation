@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     @IBAction func runButtonTapped(_ sender: UIButton) {
         let distanceToMove = roadView.frame.height - orangeCar.frame.height - 80
-        
+        self.view.layoutIfNeeded()
         UIView.animate(withDuration: 3, delay: 0.5, options: .curveEaseIn) {
             self.orangeCarConstraint.constant = distanceToMove
             self.view.layoutIfNeeded()
