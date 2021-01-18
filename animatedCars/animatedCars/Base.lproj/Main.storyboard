@@ -63,6 +63,7 @@
                         <outlet property="orangeCarConstraint" destination="lRB-6D-uTz" id="4OM-bw-O9K"/>
                         <outlet property="purpleCar" destination="kta-32-1yV" id="sP0-xL-9Zr"/>
                         <outlet property="purpleCarConstraint" destination="Zyx-Ar-9P8" id="dgs-HY-WSP"/>
+                        <outlet property="roadView" destination="8bC-Xf-vdC" id="Gby-g9-Z5h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
