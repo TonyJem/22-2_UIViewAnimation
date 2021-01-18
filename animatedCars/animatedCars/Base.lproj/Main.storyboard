@@ -32,6 +32,9 @@
                                 <rect key="frame" x="172" y="807" width="70" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Run Race!"/>
+                                <connections>
+                                    <action selector="runButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dYo-dY-8pO"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zr3-qU-pag">
                                 <rect key="frame" x="167" y="64" width="80" height="128"/>
