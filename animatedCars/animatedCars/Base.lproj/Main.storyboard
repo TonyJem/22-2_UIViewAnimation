@@ -19,7 +19,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23U-xc-LbQ">
                                 <rect key="frame" x="25" y="64" width="80" height="128"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellowCar" translatesAutoresizingMaskIntoConstraints="NO" id="biG-sS-0av">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellowCar" translatesAutoresizingMaskIntoConstraints="NO" id="biG-sS-0av">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="128"/>
                                     </imageView>
                                 </subviews>
@@ -35,7 +35,18 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kta-32-1yV">
                                 <rect key="frame" x="309" y="64" width="80" height="128"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purpleCar" translatesAutoresizingMaskIntoConstraints="NO" id="qIl-ux-7JD">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="128"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstItem="qIl-ux-7JD" firstAttribute="leading" secondItem="kta-32-1yV" secondAttribute="leading" id="0aw-mG-TeJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="qIl-ux-7JD" secondAttribute="bottom" id="NH8-lh-Dm0"/>
+                                    <constraint firstAttribute="trailing" secondItem="qIl-ux-7JD" secondAttribute="trailing" id="XbY-O0-8X2"/>
+                                    <constraint firstItem="qIl-ux-7JD" firstAttribute="top" secondItem="kta-32-1yV" secondAttribute="top" id="pzs-pu-Qno"/>
+                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMU-8c-KR3">
                                 <rect key="frame" x="172" y="807" width="70" height="30"/>
@@ -47,7 +58,18 @@
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zr3-qU-pag">
                                 <rect key="frame" x="167" y="64" width="80" height="128"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greenCar" translatesAutoresizingMaskIntoConstraints="NO" id="Q8S-K5-ozL">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="128"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Q8S-K5-ozL" secondAttribute="bottom" id="2bS-L2-7Of"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q8S-K5-ozL" secondAttribute="trailing" id="dHn-1S-iNk"/>
+                                    <constraint firstItem="Q8S-K5-ozL" firstAttribute="top" secondItem="zr3-qU-pag" secondAttribute="top" id="jMW-fi-cx2"/>
+                                    <constraint firstItem="Q8S-K5-ozL" firstAttribute="leading" secondItem="zr3-qU-pag" secondAttribute="leading" id="zcb-4Z-J9S"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -81,6 +103,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="greenCar" width="184" height="364"/>
+        <image name="purpleCar" width="184" height="364"/>
         <image name="yellowCar" width="184" height="364"/>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
