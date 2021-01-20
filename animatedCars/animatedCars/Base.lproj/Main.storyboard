@@ -18,9 +18,18 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23U-xc-LbQ">
                                 <rect key="frame" x="25" y="64" width="80" height="128"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellowCar" translatesAutoresizingMaskIntoConstraints="NO" id="biG-sS-0av">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="128"/>
+                                    </imageView>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
+                                    <constraint firstItem="biG-sS-0av" firstAttribute="top" secondItem="23U-xc-LbQ" secondAttribute="top" id="27q-Tc-cBS"/>
                                     <constraint firstAttribute="height" constant="128" id="58o-bT-0vD"/>
+                                    <constraint firstAttribute="bottom" secondItem="biG-sS-0av" secondAttribute="bottom" id="EDt-So-d4m"/>
+                                    <constraint firstItem="biG-sS-0av" firstAttribute="leading" secondItem="23U-xc-LbQ" secondAttribute="leading" id="OOR-i4-pYJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="biG-sS-0av" secondAttribute="trailing" id="WRz-Ic-nqs"/>
                                     <constraint firstAttribute="width" constant="80" id="b2J-q6-CjE"/>
                                 </constraints>
                             </view>
@@ -72,6 +81,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="yellowCar" width="184" height="364"/>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
